@@ -1,11 +1,39 @@
+/*Hele hjemmesiden skal have denne baggrundsfarve*/
 body {
     background-color: #4a4949;
 }
 
+/*Her markerer vi at at vi vil have alle h1, h2, og h3 tags til at bruge font-familien Bebas Neue*/
 h1, h2, h3 {
     font-family: Bebas Neue, sans-serif;
 }
 
+/*Her arbejder vi med navigationsbaren*/
+.navbar ul {
+    font-family: Bebas Neue, sans-serif;
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*Vælger alle <a>-tags i navnbaren*/
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+/*Når musen er på en af navigationerne ændrer den farve*/
+.navbar a:hover {
+    background-color: #272727;
+}
+/*listed items skal placeres til højre*/
+.navbar li {
+    float: right;
+}
 h1 {
     font-size: 150px;
     text-align: center;
@@ -35,6 +63,7 @@ h2 {
     display: inline-block;
 }
 
+/*Her ønsker vi at to billeder står ved siden af hinanden*/
 .container {
     display: flex;
     .billede-3, .billede-4 {
@@ -42,6 +71,8 @@ h2 {
         margin-bottom: 0px;
     }
 }
+
+/*Her tager vi et billede og matcher med bredden på containeren*/
 .billede-5 {
     display: block;
     margin: 0 auto;
@@ -56,19 +87,45 @@ h3 {
     text-align: center;
     color: #b5b5b5;
 }
-
+/* Span elementet er vores "Learn More" knap. Her bruges der både hover, og active (active gør at knappen kan ændre farve når man klikker på det*/
 span{
     text-decoration: underline;
+    color: #000000;
 }
+
 
 span:hover {opacity: 0.6;
     cursor: pointer;
 }
 
 span:active {
-    color: black;
+    color: #1e1e1e;
 }
 
 .Billede-6 {
     margin-top: 10px;
+}
+
+.papir {width: 20%;
+height: auto;
+}
+
+.idea {
+    width: 30%;
+height: auto;
+}
+
+.beskrivelse {font-family: "Bebas Neue", sans-serif;
+font-size: 50px;
+    text-align: left;
+    background-color: grey;
+}
+
+.overskrift {font-family: "Bebas Neue", sans-serif;
+font-size: 50px;
+    margin-top: 0;
+}
+
+.barbican {
+    width: 40%;
 }
